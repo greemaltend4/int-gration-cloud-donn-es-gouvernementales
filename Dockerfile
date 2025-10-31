@@ -1,17 +1,17 @@
 FROM node:20
 
-# Création du répertoire de l'application
+# Create application directory
 WORKDIR /usr/src/app
 
-# Copie les fichiers de package et installe les dépendances
+# Copy package files and install dependencies
 COPY package*.json ./
 RUN npm install
 
-# Copie le reste de l'application
+# Copy the rest of the application
 COPY . .
 
-# Exposition du port
+# Expose port
 EXPOSE 5000
 
-# Commande pour démarrer l'application
+# Command to start the application
 CMD [ "node", "server.js" ]
