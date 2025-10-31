@@ -1,7 +1,7 @@
 {
   "name": "integration-cloud-donnees-gouvernementales",
   "version": "1.0.0",
-  "description": "Backend pour l'intégration des données gouvernementales",
+  "description": "Backend pour l'intégration et la gestion des données gouvernementales",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
